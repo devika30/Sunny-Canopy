@@ -24,7 +24,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/room">Rooms</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+        </li>
         </ul>
+        
 
       <!-- Right Side Of Navbar -->
       <ul class="navbar-nav ml-auto">

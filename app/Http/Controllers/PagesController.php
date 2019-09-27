@@ -13,7 +13,7 @@ class PagesController extends Controller
     
     public function about(){
         $title="About us";
-        return view('pages.about')->with('title',$title);
+        return view('home.about')->with('title',$title);
     }
 
     public function blog(){
@@ -31,6 +31,10 @@ class PagesController extends Controller
     public function room(){
         $title="Room";
         return view('pages.room')->with('title',$title);
+    }
+
+    public function contact(){
+        return view('home.contact');
     }
    
     

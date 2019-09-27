@@ -9,9 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -27,6 +26,7 @@
              @include('inc.messages')
          </div>
         @yield('content')
+        @include('inc.footer')
     </div>
      <script src="{{ asset('js/app.js') }}"></script>
      <script src="{{asset('js/template.js')}}"></script>
