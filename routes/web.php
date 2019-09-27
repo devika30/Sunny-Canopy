@@ -23,3 +23,4 @@ Route::get('/about','PagesController@about');
 Route::get('/blog','PagesController@blog');
 Route::get('/services','PagesController@services');
 Route::get('/room','PagesController@room');
+Route::resource('/rooms','RoomsController');
