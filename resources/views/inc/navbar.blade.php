@@ -28,7 +28,7 @@
 
       <!-- Right Side Of Navbar -->
       <ul class="navbar-nav ml-auto">
-          <a class="btn btn-primary mr-1" href="/bookaroom">Book A Room</a>
+         
           <!-- Authentication Links -->
           @guest
               <li class="nav-item">
