@@ -23,7 +23,7 @@
                 <a class="nav-link" href="/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/room">Rooms</a>
+          <a class="nav-link" href="/room">Roomss</a>
         </ul>
 
       <!-- Right Side Of Navbar -->
