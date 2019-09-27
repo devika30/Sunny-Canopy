@@ -32,10 +32,7 @@ class PagesController extends Controller
         $title="Room";
         return view('pages.room')->with('title',$title);
     }
-    public function bookaroom(){
-        $title="Rooms";
-        return view('pages.bookaroom')->with('title',$title);
-    }
+   
     
 
 }
