@@ -43,7 +43,16 @@ class RoomsController extends Controller
             'children'=>'required',
             'type_of_room'=>'required'
         ]);
-        return 123;
+      //$rooms=new Room;
+      //$room->checkindate=$request->input('checkindate');
+      //$room->checkoutdate=$request->input('checkoutdate');
+      //$room->adult=$request->input('adult');
+      //$room->children=$request->input('children');
+      //$room->type_of_room->$request->input('type_of_room');
+      //$room->save();
+
+      //return redirect('/rooms')->with('success','Room Booked');
+    return 123;
     }
 
     /**
