@@ -21,6 +21,7 @@ Route::get('/home','HomeController@index')->name('home');
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about');
 Route::get('/blog','PagesController@blog');
+Route::get('/contact','PagesController@contact');
 Route::get('/services','PagesController@services');
 Route::get('/room','PagesController@room');
-Route::get('/contact','PagesController@contact');
+Route::resource('/rooms','RoomsController');
