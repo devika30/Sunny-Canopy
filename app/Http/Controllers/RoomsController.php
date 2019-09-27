@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Room;
 
 class RoomsController extends Controller
 {
@@ -13,7 +14,8 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        //
+        $rooms=Room::all();
+        return view('rooms.index')->with('rooms',$rooms);
     }
 
     /**
@@ -23,7 +25,7 @@ class RoomsController extends Controller
      */
     public function create()
     {
-        //
+        return view('rooms.create');
     }
 
     /**
@@ -34,7 +36,14 @@ class RoomsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'checkindate'=>'required',
+            'checkoutdate'=>'required',
+            'adult'=>'required',
+            'children'=>'required',
+            'type_of_room'=>'required'
+        ]);
+        return 123;
     }
 
     /**
@@ -45,7 +54,8 @@ class RoomsController extends Controller
      */
     public function show($id)
     {
-        //
+        $rooms=Room::find($id);
+        return view('rooms.show')->with('rooms',$rooms);
     }
 
     /**
