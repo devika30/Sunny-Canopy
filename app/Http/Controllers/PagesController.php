@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     public function index(){
         $title="Welcome to FoodZone";
-        return view ('pages.index')->with('title',$title);
+        return view ('home.index')->with('title',$title);
     }
     
     public function about(){
