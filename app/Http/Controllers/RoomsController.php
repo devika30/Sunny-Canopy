@@ -25,7 +25,7 @@ class RoomsController extends Controller
      */
     public function create()
     {
-        //
+        return view('rooms.create');
     }
 
     /**
@@ -36,7 +36,14 @@ class RoomsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'checkindate'=>'required',
+            'checkoutdate'=>'required',
+            'adult'=>'required',
+            'children'=>'required',
+            'type_of_room'=>'required'
+        ]);
+        return 123;
     }
 
     /**
