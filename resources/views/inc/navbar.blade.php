@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm">
     <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}">
       {{ config('app.name', 'Laravel') }}
@@ -23,7 +23,7 @@
                 <a class="nav-link" href="/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/room">Roomss</a>
+          <a class="nav-link" href="/room">Rooms</a>
         </ul>
 
       <!-- Right Side Of Navbar -->
