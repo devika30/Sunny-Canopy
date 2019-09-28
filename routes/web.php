@@ -23,12 +23,6 @@ Route::get('/about','PagesController@about');
 Route::get('/blog','PagesController@blog');
 Route::get('/contact','PagesController@contact');
 Route::get('/services','PagesController@services');
-<<<<<<< HEAD
-Route::resource('/room','BookingController', [
-=======
-Route::get('/room','PagesController@room');
-Route::resource('/rooms','RoomsController');
-
 Route::resource('posts','PostsController', [
     'names' => [
         'index' => 'posts.index',
@@ -40,8 +34,7 @@ Route::resource('posts','PostsController', [
         'destroy' => 'posts.destroy'    
     ]
 ]);
-Route::resource('/book','BookingController', [
->>>>>>> 94ae53d9cb95f113458c30497c500a8842693338
+Route::resource('/room','BookingController', [
     'names' => [
         'index'=> 'room.index',
         'store'=> 'room.store',
