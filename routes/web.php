@@ -24,7 +24,7 @@ Route::get('/blog','PagesController@blog');
 Route::get('/contact','PagesController@contact');
 Route::get('/services','PagesController@services');
 Route::get('/room','PagesController@room');
-Route::resource('/room','BookingController', [
+Route::resource('/rooms','BookingController', [
     'names' => [
         'index'=> 'room.index',
         'store'=> 'room.store',
