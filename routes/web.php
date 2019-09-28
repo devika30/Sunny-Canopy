@@ -24,10 +24,10 @@ Route::get('/blog','PagesController@blog');
 Route::get('/contact','PagesController@contact');
 Route::get('/services','PagesController@services');
 Route::get('/room','PagesController@room');
-Route::resource('/rooms','BookingController', [
+Route::resource('/book','BookingController', [
     'names' => [
-        'index'=> 'room.index',
-        'store'=> 'room.store',
+        'index'=> 'book.index',
+        'store'=> 'book.store',
     ]
 ]);
 
