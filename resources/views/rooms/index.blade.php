@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <h1>Book a Room</h1>
-<form action="{{route('book.store')}}" method="POST" enctype="multipart/form-data">
+<form action="{{route('room.store')}}" method="POST" enctype="multipart/form-data">
   @csrf
           <div class="form-group">
             <label>Check in date:</label>

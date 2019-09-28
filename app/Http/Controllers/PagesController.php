@@ -28,10 +28,6 @@ class PagesController extends Controller
      
         return view('pages.services')->with($data);
     }
-    public function room(){
-        $title="Room";
-        return view('pages.room')->with('title',$title);
-    }
 
     public function contact(){
         return view('home.contact');

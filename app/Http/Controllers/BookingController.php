@@ -53,7 +53,7 @@ class BookingController extends Controller
         $book->no_of_bed=$request->input('no_of_bed');
         $book->type_of_room=$request->input('type_of_room');
         $book->save();
-        return 123;
+        return redirect('/room')->with('success','room_booked');
 
     }
 

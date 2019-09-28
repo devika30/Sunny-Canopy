@@ -23,11 +23,11 @@
                 <a class="nav-link" href="/services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/room">Rooms</a>
-        </li>
-        <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
         </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right mr-9">
+            <a class="nav-link" href="/room">Book A Room</a>
         </ul>
         
 
