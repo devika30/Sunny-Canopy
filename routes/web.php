@@ -23,7 +23,25 @@ Route::get('/about','PagesController@about');
 Route::get('/blog','PagesController@blog');
 Route::get('/contact','PagesController@contact');
 Route::get('/services','PagesController@services');
+<<<<<<< HEAD
 Route::resource('/room','BookingController', [
+=======
+Route::get('/room','PagesController@room');
+Route::resource('/rooms','RoomsController');
+
+Route::resource('posts','PostsController', [
+    'names' => [
+        'index' => 'posts.index',
+        'create' => 'posts.create',
+        'show' => 'posts.show',
+        'store' => 'posts.store',
+        'edit' => 'posts.edit',
+        'update' => 'posts.update',
+        'destroy' => 'posts.destroy'    
+    ]
+]);
+Route::resource('/book','BookingController', [
+>>>>>>> 94ae53d9cb95f113458c30497c500a8842693338
     'names' => [
         'index'=> 'room.index',
         'store'=> 'room.store',

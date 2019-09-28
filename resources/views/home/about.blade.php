@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div style="background-image:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');height:500px" class="jumbotron jumbotron-fluid">
-        <h1 style="margin-top:150px;color:#fff;" class="display-3 text-center">About HotelDBMS</h1>
+        <h1 style="margin-top:150px;color:#fff;" class="display-3 text-center">About SUNNY CANOPY</h1>
     </div>
     <div class="container" style="margin-top: 100px;">
             <div class="row mt-5 mb-5">

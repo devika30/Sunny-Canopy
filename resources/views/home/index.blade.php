@@ -24,7 +24,9 @@
             </a>
     </div>
 </div>
-
+<div style="position: absolute;bottom: 40%;left: 30%;z-index: 20;color: white;text-shadow: 0 1px 2px rgba(0,0,0,.6);">
+    <h1 style="color:white;font-size:80px;">SUNNY CANOPY</h1>
+</div>
 <div class="container" style="margin-top: 100px;">
     <div class="row mt-5 mb-5">
         <div class="col-5">
@@ -35,10 +37,10 @@
             <a href="#" class="btn btn-outline-primary">Learn More</a>
         </div>
         <div class="col-3">
-            <img style="margin-top:-10px;" src="https://colorlib.com/preview/theme/montana/img/about/about_1.png" >
+            <img style="margin-top:-20px;" src="https://colorlib.com/preview/theme/montana/img/about/about_1.png" >
         </div>
         <div class="col-3">
-            <img style="margin-left: 10px;margin-top: 10px;" src="https://colorlib.com/preview/theme/montana/img/about/about_2.png" >
+            <img style="margin-left:-30px;margin-top: 20px;" src="https://colorlib.com/preview/theme/montana/img/about/about_2.png" >
         </div>
     </div>
 </div>
@@ -85,10 +87,10 @@
 <div class="container" style="margin-bottom: 100px;">
         <div class="row mt-5 mb-5">
             <div class="col-3">
-                <img style="margin-top:-10px;" src="https://colorlib.com/preview/theme/montana/img/about/1.png" >
+                <img style="margin-top:-20px;" src="https://colorlib.com/preview/theme/montana/img/about/1.png" >
             </div>
             <div class="col-3" >
-                <img style="margin-left: 10px;margin-top: 10px;" src="https://colorlib.com/preview/theme/montana/img/about/2.png" >
+                <img style="margin-left: 10px;margin-top:20px;margin-left:-30px;" src="https://colorlib.com/preview/theme/montana/img/about/2.png" >
             </div>
             <div class="col-5" style="margin-left: 80px;">
                     <small class="text-primary">Delicious Food</small>

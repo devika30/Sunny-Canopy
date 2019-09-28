@@ -14,11 +14,12 @@
                     <div class="col-2">
                         <h5>Navigation</h5>
                         <ul class="list-unstyled">
-                            <li> <a style="text-decoration: none;" href="#">Home</a></li>
-                            <li> <a style="text-decoration: none;" href="#">About</a></li>
+                            <li> <a style="text-decoration: none;" href="/">Home</a></li>
+                            <li> <a style="text-decoration: none;" href="/about">About</a></li>
                             <li> <a style="text-decoration: none;" href="#">Blogs</a></li>
                             <li> <a style="text-decoration: none;" href="#">Services</a></li>
                             <li> <a style="text-decoration: none;" href="#">Rooms</a></li>
+                            <li> <a style="text-decoration: none;" href="/contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-4">
