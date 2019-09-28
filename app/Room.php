@@ -11,5 +11,6 @@ class Room extends Model
     //primary key
     public $primaryKey='id';
     //timestamps
-    public $timestamps=true;
+    public $timestamps=false;
+
 }

@@ -37,3 +37,10 @@ Route::resource('posts','PostsController', [
         'destroy' => 'posts.destroy'    
     ]
 ]);
+Route::resource('/book','BookingController', [
+    'names' => [
+        'index'=> 'book.index',
+        'store'=> 'book.store',
+    ]
+]);
+

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Room;
+use App\Booking;
 
-class RoomsController extends Controller
+class BookingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        $rooms=Room::all();
-        return view('rooms.index')->with('rooms',$rooms);
+        return view('rooms.index');
     }
 
     /**
@@ -25,7 +24,7 @@ class RoomsController extends Controller
      */
     public function create()
     {
-        return view('rooms.create');
+        //
     }
 
     /**
@@ -37,13 +36,25 @@ class RoomsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'checkindate'=>'required',
-            'checkoutdate'=>'required',
-            'adult'=>'required',
-            'children'=>'required',
-            'type_of_room'=>'required'
-        ]);
+            'check_in_date'=>'required',
+            'check_out_date'=>'required',
+            'no_of_people'=>'required',
+            'no_of_bed'=>'required',
+            'type_of_room'=>'required',
+            // 'user_id'=>'null',
+            // 'room_id'=>'null',
+            ]);
+        //create new booking
+
+        $book = new Booking;
+        $book->check_in_date=$request->input('check_in_date');
+        $book->check_out_date=$request->input('check_out_date');
+        $book->no_of_people=$request->input('no_of_people');
+        $book->no_of_bed=$request->input('no_of_bed');
+        $book->type_of_room=$request->input('type_of_room');
+        $book->save();
         return 123;
+
     }
 
     /**
@@ -54,8 +65,7 @@ class RoomsController extends Controller
      */
     public function show($id)
     {
-        $rooms=Room::find($id);
-        return view('rooms.show')->with('rooms',$rooms);
+        //
     }
 
     /**
