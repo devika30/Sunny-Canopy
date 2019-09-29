@@ -40,66 +40,80 @@
                         </div>
 </div>
 </div>
+@if (Auth::check())
 <div class="text-center" style="margin-bottom:60px;">
-      <h4 style="color:crimson;font-size:30px;font-family: 'Dancing Script', cursive;">RESERVATION</h4>
-      <h1>BOOK A ROOM</h1>
+            <h4 style="color:crimson;font-size:30px;font-family: 'Dancing Script', cursive;">RESERVATION</h4>
+            <h1>BOOK A ROOM</h1>
+      </div>
+      
+      
+      <div class="container" style="margin-bottom:100px">
+            <form action="{{route('room.store')}}" method="POST" enctype="multipart/form-data">
+                  @csrf
+                  <div class="row justify-content-center">
+                        <div class="col-3">
+                              <div class="form-group">
+                                    <label>Check in date:</label>
+                                    <input type="date" class="form-control" name="check_in_date">
+                              </div>
+                                              
+                        </div>
+                        <div class="col-3">
+                              <div class="form-group">
+                                    <label >Check out date:</label>
+                                    <input type="date" class="form-control" name="check_out_date">
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row justify-content-center">
+                        <div class="col-3">
+                              <div class="form-group">
+                                    <label>No of people</label>
+                                     <input type="number" class="form-control" name="no_of_people">
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="form-group">
+                                    <label>Number of Beds</label>
+                                    <select class="form-control form-control-alternative" name='no_of_bed'>
+                                                               @foreach (\App\Room::all() as $room)
+                                    <option value='{{$room->no_of_beds}}'>{{$room->no_of_beds}}</option>                            
+                                    @endforeach
+                                    </select>
+                              </div>
+                        </div>
+                        <div class="col-3">
+                              <div class="form-group">
+                                    <label>Type of Rooms:</label>
+                                    <select class="form-control form-control-alternative" name='type_of_room'>
+                                    @foreach (\App\Room::all() as $room)
+                                    <option value='{{$room->type_of_room}}'>{{$room->type_of_room}}</option>                            
+                                    @endforeach
+                                    </select>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row justify-content-center">
+                        <div class="col-1">
+                              <button type="submit" class="btn btn-info text-center">Submit</button>
+                        </div>
+                  </div>
+                </form> 
+      </div>
+@else
+<div class="container" style="margin-bottom:100px;">
+      <div class="row justify-content-center">
+            <div class="col-5">
+                  <h2 style="color:crimson;font-size:50px;font-family: 'Dancing Script', cursive;">Login to Book</h2>
+                  <a class="btn btn-outline-info btn-lg" href="{{ route('login') }}">Login</a>
+            </div>
+            <div class="col-5">
+                  <h2 style="color:crimson;font-size:50px;font-family: 'Dancing Script', cursive;">Don't have an account?</h2>
+                  <a class="btn btn-outline-info btn-lg" href="{{ route('register') }}">SignUp</a>
+            </div>
+       </div>
 </div>
-
-
-<div class="container" style="margin-bottom:100px">
-      <form action="{{route('room.store')}}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="row justify-content-center">
-                  <div class="col-3">
-                        <div class="form-group">
-                              <label>Check in date:</label>
-                              <input type="date" class="form-control" name="check_in_date">
-                        </div>
-                                        
-                  </div>
-                  <div class="col-3">
-                        <div class="form-group">
-                              <label >Check out date:</label>
-                              <input type="date" class="form-control" name="check_out_date">
-                        </div>
-                  </div>
-            </div>
-            <div class="row justify-content-center">
-                  <div class="col-3">
-                        <div class="form-group">
-                              <label>No of people</label>
-                               <input type="number" class="form-control" name="no_of_people">
-                        </div>
-                  </div>
-                  <div class="col-3">
-                        <div class="form-group">
-                              <label>Number of Beds</label>
-                              <select class="form-control form-control-alternative" name='no_of_bed'>
-                                                         @foreach (\App\Room::all() as $room)
-                              <option value='{{$room->no_of_beds}}'>{{$room->no_of_beds}}</option>                            
-                              @endforeach
-                              </select>
-                        </div>
-                  </div>
-                  <div class="col-3">
-                        <div class="form-group">
-                              <label>Type of Rooms:</label>
-                              <select class="form-control form-control-alternative" name='type_of_room'>
-                              @foreach (\App\Room::all() as $room)
-                              <option value='{{$room->type_of_room}}'>{{$room->type_of_room}}</option>                            
-                              @endforeach
-                              </select>
-                        </div>
-                  </div>
-            </div>
-            <div class="row justify-content-center">
-                  <div class="col-1">
-                        <button type="submit" class="btn btn-info text-center">Submit</button>
-                  </div>
-            </div>
-          </form> 
-</div>
-
+@endif
 <div class="row justify-content-center text-muted" style="margin-bottom:100px;">
       <div class="col-4">
             <h4>RESERVE BY PHONE</h4>

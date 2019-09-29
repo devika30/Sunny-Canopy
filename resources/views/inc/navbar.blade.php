@@ -25,9 +25,11 @@
         <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact</a>
         </li>
+        @if (Auth::check())
         <li class="nav-item">
                 <a class="nav-link" href="/room/">Check bookings</a>
          </li>
+        @endif
          <li class="nav-item">
             <a class="nav-link" href="/room/create">Book Room</a>
         </li>
