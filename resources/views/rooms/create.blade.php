@@ -8,12 +8,13 @@
                   <div class="col-3">
                         <img style="margin-left: 10px;height200px;" src="https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80" >
                   </div>
-                  <div class="col-3" style="background-image:url('https://images.unsplash.com/photo-1551525212-a1dc18871d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80');height:500px;">
-                        <h1 class="display-2" style="margin-top:200px;margin-left:-300px;color:#fff"><span style="background-color:black;">RESERVATION</span></h1>
-                  </div>
                   <div class="col-3">
-                        <img style="margin-left:-15px;height200px;" src="https://images.unsplash.com/photo-1434569842867-4d6d1d4d1ef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" >
+                              <img style="margin-left:-10px;height200px;width:300px;" src="https://images.unsplash.com/photo-1434569842867-4d6d1d4d1ef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" >
                   </div>
+                  <div class="col-3" style="background-image:url('https://images.unsplash.com/photo-1551525212-a1dc18871d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80');height:500px;">
+                        <h1 class="display-2" style="margin-top:200px;margin-left:-575px;color:#fff"><span style="background-color:black;">RESERVATION</span></h1>
+                  </div>
+                  
 
       </div>
 </div>

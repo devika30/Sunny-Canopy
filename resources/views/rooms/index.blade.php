@@ -2,22 +2,23 @@
 @section('content')
 <h1>Your Bookings</h1>
     @if(count($bookings)>0)
+    <div class="row justify-content-center">
     @foreach ($bookings as $booking)
-    <div class="alert alert-secondary">
-    <div class="well">
-        <div class="row">
-            <div class="col-md-4 col sm-4">
-            <div class="col-md-4 col sm-8">
-            <h6><a href="/rooms/{{$booking->id}}">{{$booking->check_in_date}}-{{$booking->check_out_date}}-{{$booking->type_of_room}}</a></h6>
-                <small>Written on{{$booking->no_of_people}} by {{$booking->no_of_bed}}</small>
+            <div class="col-lg-3 d-flex align-items-stretch" style="background-image:url('https://images.unsplash.com/photo-1527239441953-caffd968d952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');height:500px;">
+               <div style="font-size: 14px;margin-left:57px;margin-top:90px;">
+                <h5 style="font-size:15px;">Booking Date</h5>
+                <p>{{$booking->check_in_date}} to {{$booking->check_out_date}}</p>
+                <h5 style="font-size:15px;">Type of Room</h5>
+                <p>{{$booking->type_of_room}}</p>
+                <h5 style="font-size:15px;">No. of People</h5>
+                <p>{{$booking->no_of_people}}</p>
+                <h5 style="font-size:15px;">No. of Beds</h5>
+                <p>{{$booking->no_of_bed}}</p>
+               </div>
             </div>
-
-        </div>
-    </div>
-
-    </div>  
     @endforeach
+</div> 
      @else
-   <p>No Bookings Found</p> 
+   <h4 class="display-3">No Bookings Found!</h4> 
    @endif
 @endsection
