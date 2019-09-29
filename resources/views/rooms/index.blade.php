@@ -2,7 +2,7 @@
 @section('content')
 <h1>Your Bookings</h1>
     @if(count($bookings)>0)
-    <div class="row justify-content-center" style="background-color:#FC8981">
+    <div class="row justify-content-center" style="background-color:#FF948B">
     @foreach ($bookings as $booking)
             <div class="col-lg-3 d-flex align-items-stretch" style="background-image:url('https://images.unsplash.com/photo-1527239441953-caffd968d952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');height:500px;">
                <div style="font-size: 14px;margin-left:57px;margin-top:90px;">
