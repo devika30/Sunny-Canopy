@@ -18,6 +18,28 @@
 
       </div>
 </div>
+<div class="container" style="color:#fff;">
+            <div class="row align-items-center" style="margin-bottom:100px;">
+                        <div class="col-6" style="background-image:url('https://images.unsplash.com/photo-1494336934272-f0efcedfc8d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80');height:400px;">
+                              <h1 class="text-center display-4" style="margin-top: 150px;"><span style="background-color:rebeccapurple">SINGLE</span></h1>
+                        </div>
+                  
+                  
+                        <div class="col-6" style="background-image:url('https://images.unsplash.com/photo-1507038772120-7fff76f79d79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');height:400px;">
+                              <h1 class="text-center display-4" style="margin-top: 150px;"><span style="background-color:rebeccapurple">DOUBLE</span></h1>
+                        </div>
+                  
+                  
+                        <div class="col-6" style="background-image:url('https://images.unsplash.com/photo-1434569842867-4d6d1d4d1ef0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');height:400px;">
+                              <h1 class="text-center display-4" style="margin-top: 150px;"><span style="background-color:rebeccapurple">TRIPLE</span></h1>
+                        </div>
+                  
+                  
+                        <div class="col-6" style="background-image:url('https://images.unsplash.com/photo-1551525212-a1dc18871d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80');height:400px;">
+                              <h1 class="text-center display-4" style="margin-top: 150px;"><span style="background-color:rebeccapurple">DELUXE</span></h1>
+                        </div>
+</div>
+</div>
 <div class="text-center" style="margin-bottom:60px;">
       <h4 style="color:crimson;font-size:30px;font-family: 'Dancing Script', cursive;">RESERVATION</h4>
       <h1>BOOK A ROOM</h1>
