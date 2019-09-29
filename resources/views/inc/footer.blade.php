@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid mb-0" style="background-color:#000;color:#fff;">
+<div class="jumbotron jumbotron-fluid mb-0" style="background-color:#000;color:#fff;margin-bottomm:0px;">
         <div class="container">
                 <div class="row">
                     <div class="col-3">
@@ -18,7 +18,7 @@
                             <li> <a style="text-decoration: none;" href="/about">About</a></li>
                             <li> <a style="text-decoration: none;" href="#">Blogs</a></li>
                             <li> <a style="text-decoration: none;" href="#">Services</a></li>
-                            <li> <a style="text-decoration: none;" href="#">Rooms</a></li>
+                            <li> <a style="text-decoration: none;" href="/room/create">Rooms</a></li>
                             <li> <a style="text-decoration: none;" href="/contact">Contact Us</a></li>
                         </ul>
                     </div>

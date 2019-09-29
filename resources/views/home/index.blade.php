@@ -34,7 +34,7 @@
             <h1 class="display-4">A Luxuries Hotel with Nature</h1>
             <br>
             <p class="text-muted">Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-            <a href="#" class="btn btn-outline-primary">Learn More</a>
+            <a href="/about" class="btn btn-outline-primary">Learn More</a>
         </div>
         <div class="col-3">
             <img style="margin-top:-20px;" src="https://colorlib.com/preview/theme/montana/img/about/about_1.png" >
@@ -59,7 +59,7 @@
                     <li>3 Adults & 2 Children size</li>
                     <li>Sea view side</li>
                 </ul>
-                <button class="btn btn-outline-primary btn-block">Book Now</button>
+                <a href="/room/create" class="btn btn-outline-primary btn-block">Book Now</a>
             </div>
             <div class="col-3" style="margin-left: 90px;">
                 <img style="height:300px;margin-bottom: 30px;" src="https://colorlib.com/preview/theme/montana/img/offers/2.png">
@@ -69,7 +69,7 @@
                     <li>3 Adults & 2 Children size</li>
                     <li>Sea view side</li>
                 </ul>
-                <button class="btn btn-outline-primary btn-block">Book Now</button>
+                <a href="/room/create" class="btn btn-outline-primary btn-block">Book Now</a>
             </div>
             <div class="col-3" style="margin-left: 90px;">
                 <img style="height:300px;margin-bottom: 30px;" src="https://colorlib.com/preview/theme/montana/img/offers/3.png">
@@ -79,7 +79,7 @@
                     <li>3 Adults & 2 Children size</li>
                     <li>Sea view side</li>
                 </ul>
-                <button class="btn btn-outline-primary btn-block">Book Now</button>
+                <a href="/room/create" class="btn btn-outline-primary btn-block">Book Now</a>
             </div>
     </div>
 </div>
@@ -97,7 +97,7 @@
                     <h1 class="display-4">We Serve Fresh and Delicious Food</h1>
                     <br>
                     <p class="text-muted">Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <a href="/about" class="btn btn-outline-primary">Learn More</a>
             </div>
     </div>
 </div>

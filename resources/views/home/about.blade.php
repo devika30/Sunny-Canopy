@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div style="background-image:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');height:500px" class="jumbotron jumbotron-fluid">
-        <h1 style="margin-top:150px;color:#fff;" class="display-3 text-center">About SUNNY CANOPY</h1>
+        <h1 style="margin-top:150px;color:#fff;" class="display-3 text-center"><span style="background-color:#000;">About SUNNY CANOPY</span></h1>
     </div>
     <div class="container" style="margin-top: 100px;">
             <div class="row mt-5 mb-5">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-3 text-center offset-1" style="border:1px solid #DCDCDC">
                     <img class="mb-3" style="border:4px solid blue;height:125px;border-radius: 50%;margin-top:-70px;" src="https://news.umt.edu/2017/01/Katie-Barnes-Culinary-Portrait-Web.jpg">
-                    <h4>Peter Hart</h4>
+                    <h4>Joyce Hart</h4>
                      <small class="text-muted">CHEF</small>
                     <p class="text-muted">Donec porta eleifend mauris ut effici-tur. Quisque non velit vestibulum, lob-ortis mi eget, rhoncus nunc</p>
                             

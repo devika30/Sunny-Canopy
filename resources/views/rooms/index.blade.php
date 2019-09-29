@@ -19,6 +19,6 @@
     @endforeach
 </div> 
      @else
-   <h4 class="display-3">No Bookings Found!</h4> 
+   <h4 class="display-3 text-center text-danger" style="margin-bottom:91px;margin-top:80px;">No Bookings Found!</h4> 
    @endif
 @endsection
