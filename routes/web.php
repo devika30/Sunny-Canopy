@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home','HomeController@index')->name('home');
+Route::get('/dashboard','DashboardController@index');
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about');
 Route::get('/blog','PagesController@blog');
@@ -39,6 +39,8 @@ Route::resource('/room','BookingController', [
         'index'=> 'room.index',
         'create'=> 'room.create',
         'store'=> 'room.store',
+        'edit'=>'room.edit',
+        'show'=>'room.show'
     ]
 ]);
 

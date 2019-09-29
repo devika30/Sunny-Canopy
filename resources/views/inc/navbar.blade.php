@@ -29,9 +29,6 @@
                 <a class="nav-link" href="/room/">Check bookings</a>
          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right mr-9">
-            <a class="nav-link" href="/room/create">Book A Room</a>
-        </ul>
         
 
       <!-- Right Side Of Navbar -->
