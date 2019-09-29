@@ -52,6 +52,7 @@ class BookingController extends Controller
         $book->no_of_people=$request->input('no_of_people');
         $book->no_of_bed=$request->input('no_of_bed');
         $book->type_of_room=$request->input('type_of_room');
+        $book->user_id=auth()->user()->id;
         $book->save();
         return redirect('/room')->with('success','room_booked');
 
@@ -64,8 +65,9 @@ class BookingController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {           
+       
+        return view('rooms.show');
     }
 
     /**
@@ -76,7 +78,8 @@ class BookingController extends Controller
      */
     public function edit($id)
     {
-        //
+        $bookings=Booking::all();
+        return view('rooms.edit')->with('bookings',$bookings); 
     }
 
     /**
@@ -88,7 +91,26 @@ class BookingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'check_in_date'=>'required',
+            'check_out_date'=>'required',
+            'no_of_people'=>'required',
+            'no_of_bed'=>'required',
+            'type_of_room'=>'required',
+            //'user_id'=>'null',
+            //'room_id'=>'null',
+            ]);
+        //create new booking
+
+        $book =Booking::find($id);
+        $book->check_in_date=$request->input('check_in_date');
+        $book->check_out_date=$request->input('check_out_date');
+        $book->no_of_people=$request->input('no_of_people');
+        $book->no_of_bed=$request->input('no_of_bed');
+        $book->type_of_room=$request->input('type_of_room');
+        $book->save();
+        return redirect('/room')->with('success','room_booked');
+
     }
 
     /**
