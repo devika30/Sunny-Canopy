@@ -41,8 +41,8 @@ class BookingController extends Controller
             'no_of_people'=>'required',
             'no_of_bed'=>'required',
             'type_of_room'=>'required',
-            // 'user_id'=>'null',
-            // 'room_id'=>'null',
+            //'user_id'=>'null',
+            //'room_id'=>'null',
             ]);
         //create new booking
 
