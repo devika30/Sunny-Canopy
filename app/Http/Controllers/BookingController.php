@@ -14,8 +14,8 @@ class BookingController extends Controller
      */
     public function index()
     {
-        return view('rooms.index');
-    }
+        $bookings=Booking::all();
+        return view('rooms.index')->with('bookings',$bookings);    }
 
     /**
      * Show the form for creating a new resource.
