@@ -17,7 +17,7 @@
                             <li> <a style="text-decoration: none;" href="/">Home</a></li>
                             <li> <a style="text-decoration: none;" href="/about">About</a></li>
                             <li> <a style="text-decoration: none;" href="#">Blogs</a></li>
-                            <li> <a style="text-decoration: none;" href="#">Services</a></li>
+                            <li> <a style="text-decoration: none;" href="/services">Services</a></li>
                             <li> <a style="text-decoration: none;" href="/room/create">Rooms</a></li>
                             <li> <a style="text-decoration: none;" href="/contact">Contact Us</a></li>
                         </ul>
@@ -25,8 +25,8 @@
                     <div class="col-4">
                         <h5>Newsletter</h5>
                         <form class="form-inline ml-auto">
-                            <input type="text" class="form-control mr-2" placeholder="Search">
-                            <button class="btn btn-outline-primary">Search</button>
+                            <input type="text" class="form-control mr-2" placeholder="Enter Email ID">
+                            <button class="btn btn-outline-primary">Submit</button>
                         </form>
                         <p class="text-muted">Subscribe to get updates!</p>
                     </div>

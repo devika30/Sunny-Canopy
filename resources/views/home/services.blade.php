@@ -87,6 +87,8 @@
                 </div>
             </div>
 </div>
+@if(Auth::check())
+@else
 <div class="container" style="margin-bottom:100px;">
         <div class="row justify-content-center">
               <div class="col-5">
@@ -99,4 +101,5 @@
               </div>
          </div>
   </div>
+@endif
 @endsection
