@@ -37,6 +37,7 @@ Route::resource('posts','PostsController', [
 Route::resource('/room','BookingController', [
     'names' => [
         'index'=> 'room.index',
+        'create'=> 'room.create',
         'store'=> 'room.store',
     ]
 ]);
