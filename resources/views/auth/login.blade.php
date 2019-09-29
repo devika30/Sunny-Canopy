@@ -12,7 +12,8 @@
                                         <div class="col-4">
                                             <img src="https://images.unsplash.com/photo-1536510344784-b43e97721c1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="height: 400px; padding: 0px; margin-left: -35px;margin-top: -20px;margin-bottom: -20px;">
                                         </div>
-                                        <div class="col-6" style="margin-left: 80px;margin-top: 80px;">
+                                        <div class="col-6" style="margin-left: 80px;margin-top: 40px;">
+                                            <h4 class="display-4 text-muted mb-3">LOGIN</h4>
                                                 <div class="form-group ">
                                                         <input style="margin-top: -15px;" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Enter Email ID" autofocus >
                             
