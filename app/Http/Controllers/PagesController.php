@@ -18,7 +18,7 @@ class PagesController extends Controller
 
     public function blog(){
         $title="Blog";
-        return view('pages.blog')->with('title',$title);
+        return view('home.blog')->with('title',$title);
     }
     
    public function services()
