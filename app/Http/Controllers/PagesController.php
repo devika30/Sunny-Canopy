@@ -26,7 +26,7 @@ class PagesController extends Controller
         'title'=>'Services',
         'services'=>['WiFi','Gift-Vouchers','Discount on first order']);
      
-        return view('pages.services')->with($data);
+        return view('home.services')->with($data);
     }
 
     public function contact(){
