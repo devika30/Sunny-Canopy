@@ -20,7 +20,6 @@ Auth::routes();
 Route::get('/dashboard','DashboardController@index');
 Route::get('/','PagesController@index');
 Route::get('/about','PagesController@about');
-Route::get('/blog','PagesController@blog');
 Route::get('/contact','PagesController@contact');
 Route::get('/services','PagesController@services');
 Route::resource('posts','PostsController', [
@@ -40,7 +39,8 @@ Route::resource('/room','BookingController', [
         'create'=> 'room.create',
         'store'=> 'room.store',
         'edit'=>'room.edit',
-        'show'=>'room.show'
+        'show'=>'room.show',
+        'destroy'=>'room.destroy'
     ]
 ]);
 

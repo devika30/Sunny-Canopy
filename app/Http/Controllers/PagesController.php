@@ -15,13 +15,7 @@ class PagesController extends Controller
         $title="About us";
         return view('home.about')->with('title',$title);
     }
-
-    public function blog(){
-        $title="Blog";
-        return view('home.blog')->with('title',$title);
-    }
-    
-   public function services()
+    public function services()
     { $data=array(
         'title'=>'Services',
         'services'=>['WiFi','Gift-Vouchers','Discount on first order']);
