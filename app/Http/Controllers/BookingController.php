@@ -51,8 +51,8 @@ class BookingController extends Controller
         $book->check_out_date=$request->input('check_out_date');
         $book->no_of_people=$request->input('no_of_people');
         $book->no_of_bed=$request->input('no_of_bed');
-        $book->type_of_room=$request->input('type_of_room');
         $book->user_id=auth()->user()->id;
+        $book->room_id = $request->input('type_of_room');
         $book->save();
         return redirect('/room')->with('success','room_booked');
 

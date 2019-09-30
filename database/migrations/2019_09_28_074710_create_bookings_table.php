@@ -19,7 +19,6 @@ class CreateBookingsTable extends Migration
             $table->string('check_out_date');
             $table->bigInteger('no_of_people');
             $table->bigInteger('no_of_bed');
-            $table->string('type_of_room');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('room_id');
         });

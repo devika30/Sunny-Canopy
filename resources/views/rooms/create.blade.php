@@ -87,7 +87,7 @@
                                     <label>Type of Rooms:</label>
                                     <select class="form-control form-control-alternative" name='type_of_room'>
                                     @foreach (\App\Room::all() as $room)
-                                    <option value='{{$room->type_of_room}}'>{{$room->type_of_room}}</option>                            
+                                    <option value="{{$room->id}}">{{$room->type_of_room}}</option>                            
                                     @endforeach
                                     </select>
                               </div>
