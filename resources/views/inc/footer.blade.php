@@ -16,7 +16,7 @@
                         <ul class="list-unstyled">
                             <li> <a style="text-decoration: none;" href="/">Home</a></li>
                             <li> <a style="text-decoration: none;" href="/about">About</a></li>
-                            <li> <a style="text-decoration: none;" href="#">Blogs</a></li>
+                            <li> <a style="text-decoration: none;" href="/posts">Blogs</a></li>
                             <li> <a style="text-decoration: none;" href="/services">Services</a></li>
                             <li> <a style="text-decoration: none;" href="/room/create">Rooms</a></li>
                             <li> <a style="text-decoration: none;" href="/contact">Contact Us</a></li>
