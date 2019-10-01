@@ -13,8 +13,8 @@
     <div>
     {!! $post->body !!}
 </div>
-<hr>
-<small>Written on{{$post->created_at}}</small>
+
+<small class="text-muted">Written on {{$post->created_at}}</small>
 <hr>
 <a href="/posts/{{$post->id}}/edit" class="btn btn-primary" style="margin-bottom:10px;">Edit</a>
 <form action="{{route('posts.destroy',$post->id)}}" method="POST" class="pull-right">

@@ -26,10 +26,10 @@
         <li class="nav-item">
                 <a class="nav-link" href="/room/">Check bookings</a>
          </li>
-         <li class="nav-item">
+        @endif
+        <li class="nav-item">
                 <a class="nav-link" href="/posts">Blogs</a>
          </li>
-        @endif
          <li class="nav-item">
             <a class="nav-link" href="/room/create">Book Room</a>
         </li>
