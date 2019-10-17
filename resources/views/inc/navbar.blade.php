@@ -23,16 +23,25 @@
                 <a class="nav-link" href="/contact">Contact</a>
         </li>
         @if (Auth::check())
-        <li class="nav-item">
+        
+         @if (Auth::User()->isAdmin())
+         <li class="nav-item">
+                <a class="nav-link" href="/posts/create">Create posts</a>
+         </li>
+         <li class="nav-item">
                 <a class="nav-link" href="/room/">Check bookings</a>
          </li>
+          @endif
+
         @endif
         <li class="nav-item">
                 <a class="nav-link" href="/posts">Blogs</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="/room/create">Book Room</a>
-        </li>
+                <a class="nav-link" href="/room/create">Book Room</a>
+            </li>
+         
+         
         </ul>
         
 

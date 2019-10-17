@@ -13,4 +13,9 @@ class Room extends Model
     //timestamps
     public $timestamps=false;
 
+    public function booking()
+    {
+        return $this->hasmany('App\Booking');
+    }
+
 }

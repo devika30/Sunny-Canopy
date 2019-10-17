@@ -4,7 +4,8 @@
 <h2 class="text-center display-4" style="margin-top:100px;">Create posts</h2>
 <hr style="width:30%; border-top:1px solid black">
 <div class="container">
-<form class="form-group" action="{{route('posts.store')}}" method="POST">
+    @if (Auth::User()->isAdmin())
+<form class="form-group" action="{{route('posts.store')}}" method="POST" enctype="multipart/form-data">
     @csrf
     <label class="h4"for="title">Title</label>
     <input class="form-control mb-3" type="text" name="title" value="" placeholder="Enter your title" >
@@ -23,5 +24,8 @@
     <button class="btn btn-dark btn-fill mt-3" type="submit">Create Post</button>
 
 </form>
+@else
+<p>Not allowed</p>
+@endif
 </div>
 @endsection

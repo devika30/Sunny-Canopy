@@ -12,4 +12,9 @@ class Booking extends Model
      public $primaryKey='id';
      //timestamps
      public $timestamps=false;
+
+     public function room()
+     {
+          return $this->belongsTo('App\Room');
+     }
 }

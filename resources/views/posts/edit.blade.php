@@ -9,9 +9,9 @@
 
     @csrf
     <label class="h4"for="title">Title</label>
-<input class="form-control mb-3" type="text" name={{$post->title}} value="" placeholder="Enter your title" >
+<input class="form-control mb-3" type="text" name="title" value="{{$post->title}}" placeholder="Enter your title" >
     <label class="h4"for="body">Body</label>
-<textarea id="article-ckeditor" class="form-control" id="message"rows="3" name={{$post->body}} placeholder="Enter Content"></textarea>
+<textarea id="article-ckeditor" class="form-control" id="message"rows="3" name="body" values="{{$post->body}}"placeholder="Enter Content"></textarea>
     <button class="btn btn-dark btn-fill mt-3" type="submit">Create Post</button>
 
 </form>
